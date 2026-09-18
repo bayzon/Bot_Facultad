@@ -33,13 +33,13 @@ llama-index-embeddings-gemini==0.4.2
 # Transitive / keep aligned with env freeze
 pydantic==2.13.5
 pydantic-settings==2.15.0
-# Gemini transitive pins (from pip freeze 2026-09-11)
-google-ai-generativelanguage==0.6.15
-google-api-core==2.33.0
-grpcio-status==1.71.2
-proto-plus==1.28.2
-protobuf==5.29.6
-pillow==10.4.0
+# Gemini transitive floors (pip resolves newer minors on Render Python)
+google-ai-generativelanguage>=0.6.15
+google-api-core>=2.33.0
+grpcio-status>=1.71.2
+proto-plus>=1.28.2
+protobuf>=5.29.6
+pillow>=10.4.0
 
 # Tests (needed for tests/ suite)
 pytest==9.1.1
