@@ -1,0 +1,21 @@
+========================================================================
+ Bot Facultad — Código de vinculación (8 dígitos)
+ Número: 5493815397265
+========================================================================
+[INFO] QR generado pero usaremos código de vinculación en su lugar...
+[PAIRING] Solicitando código para 5493815397265...
+
+========================================================================
+  TU CÓDIGO: FGGJQ8NR
+========================================================================
+
+En tu celu: WhatsApp > Ajustes > Dispositivos vinculados >
+  Vincular dispositivo > Vincular con número de teléfono
+  Ingresá: FGGJQ8NR
+
+Tenés 60 segundos. Dejando el proceso vivo 90s...
+Si expira, corré de nuevo: node pairing.js
+
+[INFO] QR generado pero usaremos código de vinculación en su lugar...
+[INFO] QR generado pero usaremos código de vinculación en su lugar...
+[TIMEOUT] Cerrando...

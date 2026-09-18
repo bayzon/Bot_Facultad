@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Env & secrets — never commit real keys
+.env
+wa_qr_bot/.env
+*-sa.json
+*-sa.json.json
+*service-account*.json
+bot-facultad-sa.json
+bot-facultad-sa.json.json
+
+# RAG persistence
+chroma_db/
+chroma_db_test/
+
+# Drive per-materia cache (runtime, per design)
+materias_docs.json
+
+# Local history (runtime)
+historial_local.json
+
+# WhatsApp QR bot (Node + sessions, never commit)
+node_modules/
+.wwebjs_auth/
+.wwebjs_auth*/
+.wwebjs_cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local caches — never commit
+.pytest_cache/
+.atl/
