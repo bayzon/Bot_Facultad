@@ -4,7 +4,7 @@ services:
     name: bot-facultad
     runtime: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install -r requirements.txt && python main.py --reindex --no-interactive"
     startCommand: "uvicorn webhook_server:app --host 0.0.0.0 --port $PORT"
     healthCheckPath: /health
     envVars:

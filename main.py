@@ -72,5 +72,10 @@ def bucle_interactivo(qe):
 def main():
     p=argparse.ArgumentParser(description="RAG local UTN — consulta PDFs con Chroma + OpenAI",formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     p.add_argument("--reindex",action="store_true",help="Fuerza reconstrucción del índice Chroma")
-    a=p.parse_args(); validar_entorno(reindex=a.reindex); configurar_modelos(); qe=get_query_engine(reindex=a.reindex); bucle_interactivo(qe)
+    p.add_argument("--no-interactive",action="store_true",help="Build the index then exit without the interactive loop (for CI/build).")
+    a=p.parse_args(); validar_entorno(reindex=a.reindex); configurar_modelos(); qe=get_query_engine(reindex=a.reindex)
+    if a.no_interactive:
+        print("[INFO] Index ready (non-interactive, exiting).")
+        sys.exit(0)
+    bucle_interactivo(qe)
 if __name__=="__main__": main()
